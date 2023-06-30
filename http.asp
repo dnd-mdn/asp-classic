@@ -32,9 +32,8 @@ Function httpGET(url)
                 Response.Write "> xmlhttp.send " & Err.Number & " " & Replace(Err.Description, vbNewLine, "") & "<br/>"
             Else
                 Response.Write "> xmlhttp.send<br/>"
+                Response.Write "> Status " & xmlhttp.status & " " & xmlhttp.statusText & "<br>"
             End If
-       
-            Response.write "> Status " & xmlhttp.status & " " & xmlhttp.statusText & "<br>"
         End If
     End If
 
