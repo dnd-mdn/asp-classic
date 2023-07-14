@@ -8,6 +8,9 @@ httpGET "https://www.example.com/"
 httpGET "https://www.canada.ca"
 httpGET "https://forces.gc.ca"
 httpGET "http://intranet.mil.ca"
+httpGET "https://api.infomedia.gc.ca/api/v1/infomedia/authentication/authenticate"
+httpGET "https://api.infomedia.gc.ca/api/v1/infomedia/articles?lang=en&page=1&pageSize=100"
+
 
 ' Debug GET request
 Function httpGET(url)
